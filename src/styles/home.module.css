@@ -1,0 +1,30 @@
+.img{
+    height: 40vh;
+    width: 40vh;
+}
+
+.genreoption{
+    cursor: pointer;
+    padding: 1em;
+    border: 3px var(--y) solid;
+    background-color: var(--b);
+    color: var(--y);
+    margin: .3em;
+    transition: .1s;
+    
+}
+
+.genreoption > p{
+    font-size: 39px;
+}
+
+.genres{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

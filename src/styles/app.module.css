@@ -1,0 +1,73 @@
+:root{
+    --header-h: 10vh;
+}
+
+
+.header{
+    position: fixed;
+    z-index: 1;
+    height: var(--header-h);
+    display: flex;
+    place-items: center;
+    font-size: 40px;
+    font-style: italic;
+    background-color: var(--accent-bg);
+    width: 100%;
+}
+
+.left{
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.content{
+    z-index: 0;
+    margin-top: var(--header-h);
+    width: 90%;
+}
+
+.footer{
+    z-index: 0;
+
+    background-color: var(--g);
+    height: 15em;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer::after{
+    content: "";
+    display: block;
+    background-color: var(--y);
+    width: 0.2em;
+    height: 10em;
+    position: absolute;
+}
+
+.fleft, .fright{
+    margin-inline: 5em;
+    font-size: 30px;
+    flex-shrink: 1;
+}
+
+.flinkhead{
+    margin-bottom: 0.75em;
+
+}
+.fhover{
+    transition: 0.2s;
+    cursor: pointer;
+}
+.fhover:hover{
+    color: var(--r)
+}
+
+@media (max-width: 500px){
+    .content{
+
+        width: 100%;
+    }
+}

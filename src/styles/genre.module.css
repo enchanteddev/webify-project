@@ -1,0 +1,16 @@
+.movie{
+    display: flex;
+    padding: 1em;
+    border-radius: 2vh;
+    background-color: var(--b);
+    margin: 1em;
+}
+
+.info{
+    margin-left: 1vw;
+}
+
+.name{
+    font-size: 50px;
+    color: var(--y);
+}
