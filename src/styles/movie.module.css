@@ -1,0 +1,42 @@
+.main{
+    background-color: var(--b);
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10vh 10vh 0vh 0vh;
+}
+
+.container{
+    display: flex;
+    margin-bottom: 5em;
+}
+
+.name{
+    color: var(--y);
+    font-size: 60px;
+}
+
+.info{
+    margin-left: 2em;
+}
+
+.imgbox{
+    margin-top: -6em;
+}
+
+.wrapper{
+    width: 70%;
+}
+
+.umaylike > *{
+    margin-bottom: 5vh;
+}
+
+.umaylike > img{
+    margin-inline: 1vw;
+}
+
+.umaylikehead{
+    font-size: 40px;
+}

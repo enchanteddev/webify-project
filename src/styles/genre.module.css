@@ -13,4 +13,11 @@
 .name{
     font-size: 50px;
     color: var(--y);
+    display: flex;
+}
+
+.play{
+    color: var(--g);
+    background-color: black;
+    border-radius: 100vh;
 }

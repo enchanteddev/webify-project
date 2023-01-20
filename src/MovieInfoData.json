@@ -85,12 +85,7 @@
             "name": " Spider-Man: Into the Spider-Verse (2018)",
             "img": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg",
             "desc": "It is the first animated film in the Spider-Man franchise. The film's story follows Miles Morales as he becomes the new Spider-Man and joins other Spider-People from various parallel universes to save his universe from Kingpin."
-        },
-        {
-            "name": " Spider-Man: Into the Spider-Verse (2018)",
-            "img": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_.jpg",
-            "desc": "It is the first animated film in the Spider-Man franchise. The film's story follows Miles Morales as he becomes the new Spider-Man and joins other Spider-People from various parallel universes to save his universe from Kingpin."
-        },
+        },  
         {
             "name": " Your Name (2016)",
             "img": "https://m.media-amazon.com/images/M/MV5BNGYyNmI3M2YtNzYzZS00OTViLTkxYjAtZDIyZmE1Y2U1ZmQ2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg",
@@ -113,11 +108,6 @@
         }
     ],
     "mystery": [
-        {
-            "name": "The Lives of the Others (2006)",
-            "img": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26e5e3ac050ed4af3c1ad353dc51777909324d85222c69d1e1abc8864e57ea33._RI_V_TTW_.jpg",
-            "desc": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives."
-        },
         {
             "name": "The Lives of the Others (2006)",
             "img": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26e5e3ac050ed4af3c1ad353dc51777909324d85222c69d1e1abc8864e57ea33._RI_V_TTW_.jpg",
