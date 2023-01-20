@@ -10,19 +10,24 @@ import style from './styles/app.module.css'
 function App() {
     const [page, setPage] = useState("home");
     const [genre, setGenre] = useState("");
+    const [movie, setMovie] = useState(-1)
+
     const pages = {
         home: <Home updatePage={(x) => {
             setGenre(x);
             setPage("genre");
             console.log(x, movieInfoData, movieInfoData[x])
         }}/>,
-        genre: <GenrePage updatePage={setPage} movies = {movieInfoData[genre]}/>,
+        genre: <GenrePage setMovie={setMovie} movie={movie} movies = {movieInfoData[genre]}/>,
     }
     return (
         <div style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
             <div className={style.header}>
-                <div className={style.left} onClick = {() => {setPage('home')}}>
-                    Binge Watch
+                <div className={style.left} onClick = {() => {setPage('home'); setGenre("")}}>
+                    Binge Watch 
+                </div>
+                <div className={style.genrehead} onClick = {() => {setMovie(-1)}}>
+                    {genre !== "" ? ` > ${genre}`: ""}
                 </div>
                 <div className={style.right}>
                     <div className={style.search}></div>

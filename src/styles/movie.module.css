@@ -15,14 +15,20 @@
 .name{
     color: var(--y);
     font-size: 60px;
+    margin-top: 0.4em;
 }
 
 .info{
     margin-left: 2em;
 }
 
+.desc{
+    font-size: 25px;
+}
+
 .imgbox{
     margin-top: -6em;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.342);
 }
 
 .wrapper{

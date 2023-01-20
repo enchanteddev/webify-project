@@ -17,8 +17,8 @@ const others = (elem, arr) =>{
     return new_arr
 }
 
-function GenrePage({setPage, movies}){
-    const [movie, setMovie] = useState(-1)
+
+function GenrePage({movies, movie, setMovie}){
     console.log(movies)
     return(
         movie === -1 ?

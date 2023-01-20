@@ -16,8 +16,13 @@
     display: flex;
 }
 
+.desc{
+    font-size: 20px;
+}
+
 .play{
     color: var(--g);
     background-color: black;
     border-radius: 100vh;
 }
+
