@@ -25,6 +25,7 @@ function capitalizeFirstLetter(string) {
 }
 //https://coolors.co/palette/ef476f-ffd166-06d6a0-118ab2-073b4c
 function App() {
+    document.title = 'Binge Watch'
     const [page, setPage] = useState("home");
     const [genre, setGenre] = useState("");
     const [movie, setMovie] = useState(-1)
