@@ -11,7 +11,10 @@
     place-items: center;
     font-size: 5vh;
     font-style: italic;
-    background-color: var(--accent-bg);
+    background: #0000004D;
+    background: -webkit-linear-gradient(bottom, #0000004D, #000000);
+    background: -moz-linear-gradient(bottom, #0000004D, #000000);
+    background: linear-gradient(to top, #00000000, #0000007b, #000000);
     width: 100%;
     
 }
@@ -30,7 +33,7 @@
 .footer{
     z-index: 0;
 
-    background-color: var(--g);
+    background-color: #111;
     height: 15em;
     width: 100vw;
     display: flex;

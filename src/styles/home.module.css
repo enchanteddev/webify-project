@@ -50,9 +50,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 11vh;
+    width: 100vw;
 }
 .main{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
 }
