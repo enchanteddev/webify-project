@@ -5,15 +5,14 @@ import GenrePage from './pages/genrepage';
 import About     from './pages/about';
 import movieInfoData from './MovieInfoData.json'
 import style from './styles/app.module.css'
-import anime from './static/videos/animated.mp4'
 
 
 const vids = {
-    anime: anime,
-    "rom-com": anime,
-    horror: anime,
-    mystery: anime,
-    action: anime,
+    anime: 'https://wallup.net/wp-content/uploads/2019/09/846725-zootopia-disney-animation-comedy-family-action-adventure-fox-foxes-1zoot.jpg',
+    "rom-com": 'https://s2.r29static.com/bin/entry/bb9/0,408,5760,3024/x,80/2003039/image.jpg',
+    horror: 'https://getwallpapers.com/wallpaper/full/6/a/0/248389.jpg',
+    mystery: 'https://tvovermind.com/wp-content/uploads/2018/10/overlooked-90s-thrillers.jpg',
+    action: 'https://wallpaperaccess.com/full/3075771.jpg',
 }
 
 
@@ -51,10 +50,7 @@ function App() {
 
     return (
         <div className = {style.main} style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
-            <video loop="" autoPlay muted id="myVideo" class={style.vid}>
-                <source type="video/mp4" src={vids[genre]}/>
-
-                </video>
+            <div className={style.bgImg} style={{backgroundImage: `url(${vids[genre]})`}}></div>
             <div className={style.header}>
                 <div className={style.left} onClick = {() => {setPage('home'); setGenre(""); setMovie(-1)}}>
                     Binge Watch 
@@ -77,9 +73,9 @@ function App() {
                     <div className={style.flinkhead + ' ' + style.fhover}>
                         Links
                     </div>
-                    <div className={style.flinks + ' ' + style.fhover}>Facebook</div>
-                    <div className={style.flinks + ' ' + style.fhover}>Instagram</div>
-                    <div className={style.flinks + ' ' + style.fhover}>Reddit</div>
+                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Facebook</div>
+                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Instagram</div>
+                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Reddit</div>
 
                 </div>
             </div>

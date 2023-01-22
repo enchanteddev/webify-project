@@ -27,7 +27,7 @@ function Movie({name, img, desc, others, changeMovie}){
                 <div className={styles.container}>
                     <div className={styles.imgbox}>
                         <ColorExtractor getColors={c => {setColors(c); console.log("adawd", c)}}>
-                            <img src={img}  height={500} className={styles.img}/>
+                            <img src={img}  height={500} width={300} className={styles.img}/>
                         </ColorExtractor>
                     </div>
                     <div className={styles.info}>
