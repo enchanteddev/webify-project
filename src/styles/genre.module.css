@@ -1,28 +1,73 @@
+:root{
+    --cw: 14vw;
+}
+
+
+
 .movie{
-    display: flex;
-    padding: 1em;
-    border-radius: 2vh;
-    background-color: var(--b);
     margin: 1em;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    width: var(--cw);
+    background-color: transparent;
+}
+
+.movie:hover{
+    transform: scale(1.5);
+}
+
+.movie:hover .info{
+    opacity: 1;
+}
+
+.movieContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
+.allmovies{
+    margin-bottom: 25vh;
+    margin-left: 10vh;
+
 }
 
 .info{
-    margin-left: 1vw;
+    margin-top: -2em;
+    margin-inline: 1em;
+    opacity: 0;
+    transition: 0.25s ease-in-out;
 }
 
 .name{
-    font-size: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 3vh;
     color: var(--y);
-    display: flex;
 }
 
 .desc{
-    font-size: 20px;
+    font-size: 3vh;
 }
 
 .play{
     color: var(--g);
-    background-color: black;
-    border-radius: 100vh;
+    position: absolute;
+    font-size: 4vh;
+    right: 0;
+}
+
+.heading{
+    font-size: 8vh;
+    padding: 1em;
+}
+
+.category{
+    font-size: 5vh;
+}
+
+.img{
+    width: var(--cw);
+    height: 40vh;
 }
 

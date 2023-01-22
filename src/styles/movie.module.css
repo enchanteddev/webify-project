@@ -31,6 +31,16 @@
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.342);
 }
 
+.othersimg{
+    width: 20%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.othersimg:hover{
+    transform: scale(1.5);
+}
+
 .wrapper{
     width: 70%;
 }
@@ -45,4 +55,8 @@
 
 .umaylikehead{
     font-size: 40px;
+}
+
+.umaylike{
+    margin-bottom: 3em;
 }

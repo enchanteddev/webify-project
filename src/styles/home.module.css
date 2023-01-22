@@ -1,26 +1,55 @@
+:root {  
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+
 .img{
     height: 40vh;
-    width: 40vh;
+    width: 15.5vw;
 }
 
 .genreoption{
     cursor: pointer;
     padding: 1em;
-    border: 3px var(--y) solid;
-    background-color: var(--b);
-    color: var(--y);
+    color: var(--g);
     margin: .3em;
     transition: .1s;
+    position: relative;
     
 }
 
-.genreoption > p{
+.caption{
     font-size: 39px;
+    position: absolute;
+    bottom: -1em;
+    left: -0.1em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.genreoption:hover .caption{
+    opacity: 1;
+    bottom: 0;
 }
 
 .genres{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 11vh;
 }
 .main{
     display: flex;
@@ -28,3 +57,23 @@
     justify-content: center;
 }
 
+.head{
+    font-size: 7vh;    
+    text-align: center;
+    padding: 2em;
+}
+
+.special{
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}

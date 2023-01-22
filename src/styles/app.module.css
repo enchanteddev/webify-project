@@ -9,10 +9,11 @@
     height: var(--header-h);
     display: flex;
     place-items: center;
-    font-size: 40px;
+    font-size: 5vh;
     font-style: italic;
     background-color: var(--accent-bg);
     width: 100%;
+    
 }
 
 .left{
@@ -49,7 +50,7 @@
 
 .fleft, .fright{
     margin-inline: 5em;
-    font-size: 30px;
+    font-size: 2em;
     flex-shrink: 1;
 }
 
@@ -68,6 +69,20 @@
 .genrehead{
     cursor: pointer;
     margin-left: .2em;
+}
+
+.main{
+    
+    background-color: rgba(0, 0, 0, 0.091);
+}
+
+.vid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
 }
 
 @media (max-width: 500px){
