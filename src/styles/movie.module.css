@@ -1,3 +1,7 @@
+:root{
+    --tra: 0.2s ease-in-out
+}
+
 .main{
     background-color: var(--b);
     margin-top: 10em;
@@ -5,6 +9,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 10vh 10vh 0vh 0vh;
+    transition: var(--tra);
 }
 
 .container{
@@ -17,14 +22,18 @@
     color: var(--y);
     font-size: 60px;
     margin-top: 0.4em;
+    transition: var(--tra);
 }
 
 .info{
     margin-left: 2em;
+
 }
 
 .desc{
     font-size: 25px;
+    transition: var(--tra);
+
 }
 
 .imgbox{

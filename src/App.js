@@ -73,9 +73,9 @@ function App() {
                     <div className={style.flinkhead + ' ' + style.fhover}>
                         Links
                     </div>
-                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Facebook</div>
-                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Instagram</div>
-                    <div className={style.flinks + ' ' + style.fhover} onClick = {() => {window.open('https://www.facebook.com/petrichor.iitpkd')}}>Reddit</div>
+                    <div className={style.flinks + ' ' + style.fhover}>Facebook</div>
+                    <div className={style.flinks + ' ' + style.fhover}>Instagram</div>
+                    <div className={style.flinks + ' ' + style.fhover}>Reddit</div>
 
                 </div>
             </div>

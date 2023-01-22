@@ -24,3 +24,7 @@ body{
     background-color: var(--bg);
     color: var(--fg);
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
