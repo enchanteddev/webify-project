@@ -42,9 +42,7 @@
     position: relative;
 }
 
-.imgbox:hover .watchtrailer{
-    opacity: 1;
-}
+
 
 .othersimg{
     width: 20%;
@@ -112,7 +110,6 @@
     padding: 0.25em;
     padding-inline: 0.75em;
     border-radius: 1em;
-    opacity: 0;
     transition: var(--tra);
     cursor: pointer;
     font-size: 1.5em;
