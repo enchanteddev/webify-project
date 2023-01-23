@@ -42,7 +42,7 @@ function GenrePage({movies, movie, setMovie, genreName}){
                 </div>
             </div>
         </div> : 
-        <Movie name={movies[movie].name} img={movies[movie].img} desc={movies[movie].desc} others={others(movies[movie], movies)} changeMovie={setMovie}/>
+        <Movie name={movies[movie].name} trailer = {movies[movie].trailer} img={movies[movie].img} desc={movies[movie].desc} others={others(movies[movie], movies)} changeMovie={setMovie}/>
     )
 }
 

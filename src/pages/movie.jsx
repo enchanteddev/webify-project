@@ -4,7 +4,9 @@ import { useState } from 'react';
 import invert from 'invert-color';
 import { useEffect } from 'react';
 import {AiFillStar} from 'react-icons/ai';
-import {SiNetflix, SiPrime, SiHbo, SiHulu} from 'react-icons/si'
+import {SiNetflix, SiPrime, SiHbo, SiHulu} from 'react-icons/si';
+import {BsPlayFill} from 'react-icons/bs'
+
 
 const black = '#000000';
 const white = '#ffffff';
@@ -15,7 +17,7 @@ const getInverted = (color) => {
     return [invert(color, { black: '#000000', white: '#ffffff' }), invert(color, {black: '#3a3a3a', white: '#aaaaaa'}), invert(color), invert(invert(color, {black: '#000000', white: '#FFFFFF'}))]
 }
 
-function Movie({name, img, desc, others, changeMovie}){
+function Movie({name, img, desc, others, changeMovie, trailer}){
     const [colors, setColors] = useState([])
     const [fgcolor, setFGColor] = useState(['white', 'white'])
 
@@ -33,6 +35,9 @@ function Movie({name, img, desc, others, changeMovie}){
                         <ColorExtractor getColors={c => {setColors(c); console.log("adawd", c)}}>
                             <img src={img}  height={500} width={300} className={styles.img}/>
                         </ColorExtractor>
+                        <div className={styles.watchtrailer} onClick = {() => {window.open(trailer)}}>
+                            Watch Trailer <BsPlayFill/>
+                        </div>
                     </div>
                     <div className={styles.info}>
                         <div className={styles.name} style = {{color: fgcolor[0]}}>{name}</div>
