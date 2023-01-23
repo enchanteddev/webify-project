@@ -3,12 +3,16 @@ import { ColorExtractor } from 'react-color-extractor';
 import { useState } from 'react';
 import invert from 'invert-color';
 import { useEffect } from 'react';
+import {AiFillStar} from 'react-icons/ai';
+import {SiNetflix, SiPrime, SiHbo, SiHulu} from 'react-icons/si'
 
 const black = '#000000';
 const white = '#ffffff';
 
+const services = [<SiNetflix/>, <SiHbo/>, <SiPrime/>, <SiHulu/>]
+
 const getInverted = (color) => {
-    return [invert(color, { black: '#000000', white: '#ffffff' }), invert(color, {black: '#3a3a3a', white: '#aaaaaa'})]
+    return [invert(color, { black: '#000000', white: '#ffffff' }), invert(color, {black: '#3a3a3a', white: '#aaaaaa'}), invert(color), invert(invert(color, {black: '#000000', white: '#FFFFFF'}))]
 }
 
 function Movie({name, img, desc, others, changeMovie}){
@@ -32,6 +36,14 @@ function Movie({name, img, desc, others, changeMovie}){
                     </div>
                     <div className={styles.info}>
                         <div className={styles.name} style = {{color: fgcolor[0]}}>{name}</div>
+                        <div className={styles.tags}>
+                            <div className={styles.tag} style = {{backgroundColor: fgcolor[2], color: fgcolor[3]}}>3.78 <AiFillStar/></div>
+                            <div className={styles.tag} style = {{backgroundColor: fgcolor[2], color: fgcolor[3]}}>JAN 2022</div>
+                            <div className={styles.tag} style = {{backgroundColor: fgcolor[2], color: fgcolor[3]}}>138 mins</div>
+                        </div>
+                        <div className={styles.tags}>
+                            {services.map((e) => <dev className={styles.service}  style = {{backgroundColor: fgcolor[2], color: fgcolor[3]}}>{e}</dev>)}
+                        </div>
                         <div className={styles.desc} style = {{color: fgcolor[1]}}>{desc}</div>
                     </div>
                 </div>

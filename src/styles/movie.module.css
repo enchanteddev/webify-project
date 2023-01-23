@@ -70,3 +70,30 @@
 .umaylike{
     margin-bottom: 3em;
 }
+
+.tags{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.tag{
+    background-color: grey;
+    border-radius: 2vh;
+    padding: .3em;
+    padding-inline: 0.5em;
+    width: fit-content;
+    margin-left: 0.25em;
+    display: flex;
+}
+
+.service{
+    background-color: grey;
+    border-radius: 2vh;
+    padding: .3em;
+    padding-inline: 0.5em;
+    width: fit-content;
+    margin-left: 0.25em;
+    display: flex;
+    font-size: 1.5em;
+}

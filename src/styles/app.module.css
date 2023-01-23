@@ -89,7 +89,6 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     filter: brightness(33%);
-    border: 1px white solid;
 }
 
 
